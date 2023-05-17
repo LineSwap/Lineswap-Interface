@@ -80,12 +80,12 @@ export const socials = [
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://twitter.com/lineswap",
+    href: "https://twitter.com/Line_swap",
   },
   {
     label: "Discord",
     icon: TelegramIcon,
-    href: "https://discord.com/line-swap",
+    href: "https://discord.gg/M5RP4eAvsv",
     items: [
       /*
       {
