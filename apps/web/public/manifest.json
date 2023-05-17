@@ -1,8 +1,8 @@
 {
-  "short_name": "PancakeSwap",
-  "name": "PancakeSwap",
-  "description": "Farm TWS with Pancake LP Tokens",
-  "homepage_url": "https://pancakeswap.finance",
+  "short_name": "LineSwap",
+  "name": "LineSwap",
+  "description": "Farm LINE with Line-LP Tokens",
+  "homepage_url": "https://Lineswap.exchange",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",

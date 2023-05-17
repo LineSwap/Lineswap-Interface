@@ -69,7 +69,7 @@ function MyApp(props: AppProps<{ initialReduxState: any }>) {
           content="LineSwap, the leading DEX on Linea Chain with the best farms in DeFi and a lottery for Line."
         />
         <meta name="theme-color" content="#1FC7D4" />
-        <meta name="twitter:image" content="https://lineswap.exchange/images/hero1.png" />
+        <meta name="twitter:image" content="https://i.ibb.co/Bz7nxLg/hero.png" />
         <meta
           name="twitter:description"
           content="The new DeFi AMM on Linea!"
