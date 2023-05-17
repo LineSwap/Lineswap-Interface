@@ -85,13 +85,12 @@ export const socials = [
   {
     label: "Discord",
     icon: TelegramIcon,
-    href: "https://discord.gg/M5RP4eAvsv",
     items: [
-      /*
       {
-        label: "English",
-        href: "https://t.me/towerfi",
+        label: "Global",
+          href: "https://discord.gg/M5RP4eAvsv",
       },
+      /*
       {
         label: "Announcements",
         href: "https://t.me/towerfiAnn",
