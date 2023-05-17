@@ -6,7 +6,7 @@ export const DEFAULT_META: PageMeta = {
   title: 'LineSwap',
   description:
     'The first DEFI AMM built on Linea Network.',
-  image: 'https://Lineswap.exchange/images/hero.png',
+  image: 'https://Lineswap.exchange/images/hero1.png',
 }
 
 interface PathList {
