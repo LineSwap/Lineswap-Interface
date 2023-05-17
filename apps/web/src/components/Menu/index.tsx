@@ -26,9 +26,9 @@ const Menu = (props) => {
   const activeMenuItem = getActiveMenuItem({ menuConfig: menuItems, pathname })
   const activeSubMenuItem = getActiveSubMenuItem({ menuItem: activeMenuItem, pathname })
 
-  const toggleTheme = useMemo(() => {
-    return () => setTheme(isDark ? 'light' : 'dark')
-  }, [setTheme, isDark])
+  // const toggleTheme = useMemo(() => {
+  //   return () => setTheme(isDark ? 'light' : 'dark')
+  // }, [setTheme, isDark])
 
   const getFooterLinks = useMemo(() => {
     return footerLinks(t)
@@ -49,7 +49,7 @@ const Menu = (props) => {
         }
         // banner={showPhishingWarningBanner && typeof window !== 'undefined' && <PhishingWarningBanner />}
         isDark={isDark}
-        toggleTheme={toggleTheme}
+        // toggleTheme={toggleTheme}
         currentLang={currentLanguage.code}
         langs={languageList}
         setLang={setLanguage}
