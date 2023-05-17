@@ -83,9 +83,21 @@ export const socials = [
     href: "https://twitter.com/lineswap",
   },
   {
-    label: "Telegram",
+    label: "Discord",
     icon: TelegramIcon,
     href: "https://discord.com/line-swap",
+    items: [
+      /*
+      {
+        label: "English",
+        href: "https://t.me/towerfi",
+      },
+      {
+        label: "Announcements",
+        href: "https://t.me/towerfiAnn",
+      },
+      */
+    ],
   },
 ];
 
