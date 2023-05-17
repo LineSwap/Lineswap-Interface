@@ -1,0 +1,38 @@
+{
+  "name": "Pancake Default List",
+  "timestamp": "2022-01-26T11:45:09Z",
+  "version": {
+    "major": 4,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "https://pancakeswap.finance/logo.png",
+  "keywords": ["pancake", "default"],
+  "tokens": [
+    {
+      "name": "Wrapped ETH",
+      "symbol": "WETH",
+      "address": "0xc0aBFB178DBeafBBDdEc74B3A3cc938df8E515d7",
+      "chainId": 59140,
+      "decimals": 18,
+      "logoURI": "https://i.ibb.co/JkZHn75/1.png"
+    },
+    {
+      "name": "LineSwap Token",
+      "symbol": "LINE",
+      "address": "0x2B184fAc05306115F21ee7B8eA04EA2B2FFCB3b0",
+      "chainId": 59140,
+      "decimals": 18,
+      "logoURI": "https://i.ibb.co/tL0sPwd/LINE.png"
+    },
+    {
+      "name": "Testnet USD",
+      "symbol": "USDT",
+      "address": "0x275a59C1E7710857DD165FDd693eEddc95Fffbae",
+      "chainId": 59140,
+      "decimals": 18,
+      "logoURI": "https://raw.githubusercontent.com/SmartDev1990/tower-asset-icon/main/icon/usdt.png"
+    }
+  ]
+}
