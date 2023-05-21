@@ -7,7 +7,7 @@ import { PageMeta } from 'components/Layout/Page'
 import { useTranslation } from '@pancakeswap/localization'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import { ChainId } from '@pancakeswap/sdk'
-import Hero from './components/Hero'
+// import Hero from './components/Hero'
 import {
   swapSectionData,
   earnSectionData,
@@ -15,6 +15,7 @@ import {
   moreSectionData,
   launchpadSectionData,
 } from './components/SalesSection/data'
+import MetricsSection2 from './components/MetricsSection2'
 import MetricsSection from './components/MetricsSection'
 import SalesSection from './components/SalesSection'
 import RoadmapSection from './components/RoadmapSection'
@@ -75,13 +76,14 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       `}</style>
       <StyledHeroSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
-        background="linear-gradient(145deg, rgba(255,255,255,1) 40%, rgba(16,27,27,1) 78%);"
+        background="radial-gradient(circle, rgba(255,255,255,0.1518732492997199) 0%, rgba(8,6,11,1) 93%);"
         index={2}
         hasCurvedDivider={false}
       >
-        <Hero />
+        <MetricsSection2 />
+        {/* <CakeDataRow /> */}
       </StyledHeroSection>
-      <PageSection
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background="white"
         containerProps={{
@@ -100,7 +102,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       >
         <SalesSection {...bridgeSectionData(t)} />
         {/* TODO: until we are enable fetch multi-chain farms */}
-        {chainId === ChainId.BSC && <FarmsPoolsRow />}
+        {/* {chainId === ChainId.BSC && <FarmsPoolsRow />}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
@@ -125,7 +127,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         hasCurvedDivider={false}
       >
         <FaqSection />
-      </PageSection>
+      </PageSection> */}
     </>
   )
 }

@@ -6,8 +6,8 @@ import { SvgProps } from "../types";
 const Logo: React.FC<React.PropsWithChildren<SvgProps>> = (props) => {
   return (
     <div {...props}>
-      <img src="/images/256256/logo.png" alt="IceCream" width="32px" style={{ verticalAlign: "middle" }} />
-      <span style={{ verticalAlign: "middle", color: "black", fontSize: "1.6rem", fontWeight: "bold" }}>
+    <img src="/images/newlogo2.png" alt="IceCream" width="32px" style={{ verticalAlign: "middle" }} />
+      <span style={{ verticalAlign: "middle", color: "#fff", fontSize: "1.4rem", fontWeight: "bold" }}>
         LINESWAP
       </span>
     </div>
