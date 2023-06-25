@@ -172,7 +172,7 @@ export const fetchMasterChefData = async (
     const masterChefMultiCallResult = await multicallv2({
       abi: masterChefV2Abi,
       calls: masterChefAggregatedCalls,
-      chainId: isTestnet ? ChainId.CMP : ChainId.LINEA_TESTNET,
+      chainId: isTestnet ? ChainId.BSC : ChainId.LINEA_TESTNET,
     })
 
     let masterChefChunkedResultCounter = 0
@@ -223,7 +223,7 @@ export const fetchMasterChefV2Data = async ({
           params: [true],
         },
       ],
-      chainId: isTestnet ? ChainId.CMP : ChainId.LINEA_TESTNET,
+      chainId: isTestnet ? ChainId.BSC : ChainId.LINEA_TESTNET,
     })
 
     return {

@@ -6,11 +6,11 @@ export const testnetTokens = {
   line: LINE_TESTNET,
   syrup: new ERC20Token(
     ChainId.LINEA_TESTNET,
-    '0x2DD80bE5B44cdcB3f39dEb9cE483c8f67191f478',
+    '0xbDda3DC688cF63C3cA7C76d2432A3b6B636c9ca0',
     18,
     'Syrup',
     'SyrupBar Token',
-    'https://towerswap.finance',
+    'https://Lineswap.Exchange',
   ),
   usdt: new ERC20Token(
     ChainId.LINEA_TESTNET,

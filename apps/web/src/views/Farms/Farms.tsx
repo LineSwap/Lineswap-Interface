@@ -357,7 +357,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
 
   return (
     <FarmsContext.Provider value={{ chosenFarmsMemoized }}>
-      <PageHeader>
+      <PageHeader borderRadius="10px">
         <FarmFlexWrapper justifyContent="space-between">
           <Box>
             <FarmH1 as="h1" scale="xxl" color="secondary" mb="24px">
@@ -378,11 +378,11 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
               </Button>
             </NextLinkFromReactRouter> */}
           </Box>
-          {/* {chainId === ChainId.LINEA_TESTNET && (
+          {chainId === ChainId.LINEA_TESTNET && (
             <Box>
               <BCakeBoosterCard />
             </Box>
-          )} */}
+          )}
         </FarmFlexWrapper>
       </PageHeader>
       <Page>

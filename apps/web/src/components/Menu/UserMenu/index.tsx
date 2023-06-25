@@ -15,12 +15,12 @@ import ConnectWalletButton from 'components/ConnectWalletButton'
 import Trans from 'components/Trans'
 import { useActiveChainId } from 'hooks/useActiveChainId'
 import useAuth from 'hooks/useAuth'
-import NextLink from 'next/link'
+// import NextLink from 'next/link'
 import { useEffect, useState } from 'react'
 import { useProfile } from 'state/profile/hooks'
 import { usePendingTransactions } from 'state/transactions/hooks'
 import { useAccount } from 'wagmi'
-import ProfileUserMenuItem from './ProfileUserMenuItem'
+// import ProfileUserMenuItem from './ProfileUserMenuItem'
 import WalletModal, { WalletView } from './WalletModal'
 import WalletUserMenuItem from './WalletUserMenuItem'
 
@@ -66,7 +66,7 @@ const UserMenu = () => {
           {hasPendingTransactions && <RefreshIcon spin />}
         </UserMenuItem>
         <UserMenuDivider />
-        <NextLink href={`/profile/${account?.toLowerCase()}`} passHref>
+        {/* <NextLink href={`/profile/${account?.toLowerCase()}`} passHref>
           <UserMenuItem as="a" disabled={isWrongNetwork || chainId !== ChainId.LINEA_TESTNET}>
             {t('Your NFTs')}
           </UserMenuItem>
@@ -75,7 +75,7 @@ const UserMenu = () => {
           isLoading={isLoading}
           hasProfile={hasProfile}
           disabled={isWrongNetwork || chainId !== ChainId.LINEA_TESTNET}
-        />
+        /> */}
         <UserMenuDivider />
         <UserMenuItem as="button" onClick={logout}>
           <Flex alignItems="center" justifyContent="space-between" width="100%">

@@ -109,9 +109,9 @@ export const BCakeBoosterCard = () => {
             {t('Yield Booster')}
           </Text>
           {tooltipVisible && tooltip}
-          <Box ref={targetRef} style={{ float: 'right', position: 'relative', top: '6px' }}>
+          {/* <Box ref={targetRef} style={{ float: 'right', position: 'relative', top: '6px' }}>
             <HelpIcon color={theme.colors.textSubtle} />
-          </Box>
+          </Box> */}
         </StyledCardBody>
         <StyledCardFooter>
           <CardContent />
@@ -145,14 +145,14 @@ const CardContent: React.FC = () => {
     return (
       <Box width="100%">
         <Text color="textSubtle" fontSize={12} bold>
-          {t('No LINE locked')}
+          {t('Not have LP tokens?')}
         </Text>
         <Text color="textSubtle" fontSize={12} mb="16px">
-          {t('An active fixed-term LINE staking position is required for activating farm yield boosters.')}
+          {t('Get LP token by adding liquidity on liquidity page')}
         </Text>
-        <NextLink href="/pools" passHref>
+        <NextLink href="/liquidity" passHref>
           <Button as="a" width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
-            {t('Go to Pool')}
+            {t('Get LP now')}
           </Button>
         </NextLink>
       </Box>
@@ -166,7 +166,7 @@ const CardContent: React.FC = () => {
         <Text color="textSubtle" fontSize={12} mb="16px">
           {t('An active fixed-term LINE staking position is required for activating farm yield boosters.')}
         </Text>
-        <NextLink href="/pools" passHref>
+        <NextLink href="/add" passHref>
           <Button as="a" width="100%" style={{ backgroundColor: theme.colors.textSubtle }}>
             {t('Go to Pool')}
           </Button>

@@ -31,7 +31,7 @@ export const LINE_TESTNET = new ERC20Token(
   ChainId.LINEA_TESTNET,
   '0x2B184fAc05306115F21ee7B8eA04EA2B2FFCB3b0',
   18,
-  'TW',
+  'LINE',
   'LineSwap Token',
   'https://Lineswap.exchange/',
 )

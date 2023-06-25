@@ -5,9 +5,9 @@ import {
   SwapFillIcon,
   EarnFillIcon,
   EarnIcon,
-  // TrophyIcon,
+  TrophyIcon,
   ShareIcon,
-  // TrophyFillIcon,
+  TrophyFillIcon,
   NftIcon,
   NftFillIcon,
   MoreIcon,
@@ -45,7 +45,7 @@ const config: (
 ) => ConfigMenuItemsType[] = (t, isDark, languageCode, chainId) =>
   [
     {
-      label: t('Trade'),
+      label: t('♻️Trade'),
       icon: SwapIcon,
       fillIcon: SwapFillIcon,
       href: '/swap',
@@ -85,7 +85,7 @@ const config: (
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
-      label: t('Pool'),
+      label: t('🪙Pool'),
       icon: SwapIcon,
       fillIcon: SwapFillIcon,
       href: '/liquidity',
@@ -125,7 +125,7 @@ const config: (
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
-      label: t('Farm'),
+      label: t('💰Earn'),
       href: '/farms',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
@@ -145,24 +145,13 @@ const config: (
       ].map((item) => addMenuItemSupported(item, chainId)),
     },
     {
-      label: t('Stake'),
-      href: '/404',
-      icon: EarnIcon,
-      fillIcon: EarnFillIcon,
+      label: t('🔥Bridge'),
+      href: 'https://dev-cbridge-v2.netlify.app/59140/97/BNB',
+      type: DropdownMenuItemType.EXTERNAL_LINK,
+      icon: TrophyIcon,
+      fillIcon: TrophyFillIcon,
       showItemsOnMobile: false,
-      items: [
-        {
-          label: t('Coming Soon'),
-          href: '/404',
-        },
-        /*
-        {
-          label: t('Pools'),
-          href: '/pools',
-          supportChainIds: SUPPORT_ONLY_BSC,
-        },
-        */
-      ].map((item) => addMenuItemSupported(item, chainId)),
+      items: [].map((item) => addMenuItemSupported(item, chainId)),
     },
     // {
     //   label: t('Win'),
@@ -216,7 +205,7 @@ const config: (
     //   ],
     // },
     {
-      label: 'Docs',
+      label: '📑Docs',
       href: 'https://line-swap.gitbook.io/lineswap/',
       type: DropdownMenuItemType.EXTERNAL_LINK,
       icon: ShareIcon,
