@@ -43,7 +43,7 @@ const PerpetualBanner = () => {
   const { isDark } = useTheme()
 
   const perpetualUrl = useMemo(
-    () => `https://towerswap.finance/farms`,
+    () => `https://lineswap.exchange/farms`,
     [code, isDark],
   )
   const headerRef = useRef<HTMLDivElement>(null)
